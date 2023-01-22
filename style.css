@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    background: black;
+    display: table;
+}
+
+.wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+}
+
+path {
+    stroke: #fff;
+    fill: #fff;
+    stroke-dasharray: 1500;
+    opacity: 10;
+    animation: animate 2s cubic-bezier(.17,.67,.83,.67);
+}
+
+#j {
+    animation-delay: 0.1s;
+  }
+
+#u {
+    animation-delay: 0.2s;
+}
+
+#l {
+    animation-delay: 0.3s;
+}
+
+#i {
+    animation-delay: 0.4s;
+}
+
+#a{
+    animation-delay: 0.5s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1500;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1500;
+    }
+
+    90% {
+        fill: rgba(255, 255, 255,0);
+    }
+
+    100% {
+        opacity: 10;
+        
+        stroke-dashoffset: 0;
+    }
+}
+
+#julia path:nth-child(1){
+    fill: #F64100;
+    stroke: #F64100;   
+}
+
+#julia path:nth-child(2){
+    fill: #D41900;
+    stroke: #D41900;  
+}
+
+#julia path:nth-child(3){
+    fill: #EB0B22;
+    stroke: #EB0B22;   
+}
+
+#julia path:nth-child(4){
+    fill: #D4007F;
+    stroke: #D4007F;  
+}
+
+#julia path:nth-child(5){
+    fill: #E900F6;
+    stroke: #E900F6;
+}
